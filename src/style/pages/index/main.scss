@@ -90,6 +90,7 @@
 
 		.indexMain__about__container {
 			@include page-container;
+			position: relative;
 
 			.indexMain__about__container__inner {
 				display: flex;
@@ -97,6 +98,14 @@
 				.indexMain__about__content {
 					margin-right: 97px;
 					max-width: 633px;
+
+					@include laptop {
+						margin-right: 60px;
+					}
+
+					@include tablet {
+						margin-right: 0;
+					}
 
 					.indexMain__about__content__title {
 						@include block-title;
@@ -130,7 +139,7 @@
 							}
 
 							.indexMain__about__content__people__info__position {
-								margin-top: 15px;
+								margin-top: 4px;
 								color: $bright-text-color;
 							}
 						}
@@ -139,6 +148,15 @@
 
 				.indexMain__about__img {
 					max-width: 378px;
+					min-width: 350px;
+
+					@include laptop {
+						min-width: 300px;
+					}
+
+					@include tablet {
+						display: none;
+					}
 				}
 			}
 		}

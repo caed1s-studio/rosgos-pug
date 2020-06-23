@@ -1,0 +1,56 @@
+.begin {
+	@include page-base(60px, 60px);
+	background: $begin-bg-color;
+
+	.begin__container {
+		@include page-container;
+
+		.begin__container__inner {
+			display: flex;
+			align-items: center;
+
+			@include phone {
+				flex-wrap: wrap-reverse;
+			}
+
+			.begin__btn {
+				margin-right: 56px;
+
+				@include tablet {
+					margin-right: 25px;
+				}
+
+				@include phone {
+					margin-right: 0;
+					margin-top: 63px;
+					width: 100%;
+					text-align: center;
+				}
+
+				button {
+					@include btn-light;
+					min-width: 227.53px;
+				}
+			}
+
+			.begin__text {
+				font-family: $try-text-ff;
+				font-size: 26px;
+				line-height: 36px;
+				color: $light-text-color;
+
+				@include tablet {
+					font-size: 24px;
+				}
+
+				.begin__text__line {
+					margin-bottom: 4px;
+
+					&:last-child {
+						margin-bottom: 0;
+					}
+				}
+			}
+		}
+	}
+}

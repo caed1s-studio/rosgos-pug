@@ -1,0 +1,55 @@
+.try {
+	@include page-base(60px, 60px);
+	background: $try-bg-color;
+
+	.try__container {
+		@include page-container;
+
+		.try__container__inner {
+			display: flex;
+			align-items: center;
+
+			@include phone {
+				flex-wrap: wrap-reverse;
+			}
+
+			.try__btn {
+				margin-right: 71px;
+
+				@include tablet {
+					margin-right: 40px;
+				}
+
+				@include phone {
+					margin-right: 0;
+					margin-top: 63px;
+					width: 100%;
+					text-align: center;
+				}
+
+				button {
+					@include btn-light;
+				}
+			}
+
+			.try__text {
+				font-family: $try-text-ff;
+				font-size: 26px;
+				line-height: 36px;
+				color: $light-text-color;
+
+				@include tablet {
+					font-size: 24px;
+				}
+
+				.try__text__line {
+					margin-bottom: 4px;
+
+					&:last-child {
+						margin-bottom: 0;
+					}
+				}
+			}
+		}
+	}
+}

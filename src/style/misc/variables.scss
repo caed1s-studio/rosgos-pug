@@ -12,14 +12,18 @@ $gradient2-color: linear-gradient(97.74deg, #b71c4e 1.53%, #7c032a 99.17%);
 $gradient3-color: linear-gradient(92.8deg, #b71c4e 1.53%, #7c032a 99.17%);
 
 // фон
-$main-bg-color: $iron-color;
+$main-bg-color: $iron-color; // основной серый цвет
+$try-bg-color: $gradient1-color; // цвет первой вставки
+$begin-bg-color: $gradient2-color; // цвет второй вставки
 
 // заголовки
 $h1-color: $tuna-color;
 $block-title-color: $bleachedCedar-color;
+$small-title-color: $bleachedCedar-color;
 
 // цвет текста
 $main-text-color: $tuna-color; // главный цвет текста
+$light-text-color: $white-color; // белый текст
 $bright-text-color: $shiraz-color; // цвет выделенного текста
 
 //кнопки
@@ -31,6 +35,9 @@ $btnTextHDark-color: $shiraz-color;
 //светлая кнопка
 $btnBgLight-color: $white-color;
 $btnTextLight-color: $shiraz-color;
+
+// карточки
+$card-bg-color: $white-color;
 
 // шрифты
 // подключенные
@@ -46,6 +53,12 @@ $GothamProItalic-ff: "GothamPro-Italic";
 $h1-ff: $GothamProBold-ff;
 $block-title-ff: $GothamProMedium-ff;
 
+// разделы с кнопками
+$try-text-ff: $GothamProBold-ff;
+
+//карточки
+$card-title-ff: $GothamProBold-ff;
+
 // подзаголовок
 $h1-text-ff: $RobotoMedium-ff;
 
@@ -53,4 +66,4 @@ $h1-text-ff: $RobotoMedium-ff;
 $main-text-ff: $RobotoRegular-ff;
 
 // кнопки
-$btn-ff: $GothamProRegular-ff;
+$btn-ff: $GothamProBold-ff;
