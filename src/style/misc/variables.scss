@@ -11,11 +11,14 @@ $grey-color: #cacfd7;
 $gradient1-color: linear-gradient(97.69deg, #b71c4e 1.53%, #7c032a 99.17%);
 $gradient2-color: linear-gradient(97.74deg, #b71c4e 1.53%, #7c032a 99.17%);
 $gradient3-color: linear-gradient(92.8deg, #b71c4e 1.53%, #7c032a 99.17%);
+$light-gradient-color: linear-gradient(180deg, #e5e6e8 0%, rgba(213, 215, 219, 0) 100%);
 
 // фон
 $main-bg-color: $iron-color; // основной серый цвет
 $try-bg-color: $gradient1-color; // цвет первой вставки
 $begin-bg-color: $gradient2-color; // цвет второй вставки
+$join-bg-color: $shiraz-color; // цвет третьей вставки
+$light-bg-color: $light-gradient-color; // светло серый цвет
 
 // заголовки
 $h1-color: $tuna-color;

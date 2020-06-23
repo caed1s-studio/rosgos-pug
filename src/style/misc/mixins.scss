@@ -22,9 +22,9 @@
   }
 }
 @mixin slider-width {
-  @media screen and (max-width: 1050px) {
-    @content;
-  }
+	@media screen and (max-width: 1050px) {
+		@content;
+	}
 }
 
 // основа страницы
@@ -114,31 +114,32 @@
 }
 
 @mixin rotate-arrow($width, $color, $hoverColor, $right, $top, $borderWidth) {
-  position: relative;
-  &:after {
-    content: "";
-    display: block;
-    width: $width;
-    height: $width;
-    border-top: $borderWidth solid $color;
-    border-right: $borderWidth solid $color;
-    border-radius: 1px;
-    position: absolute;
-    top: $top;
-    right: $right;
-    z-index: 1;
-    transform: rotate(135deg);
-    transition: border-color 0.2s linear;
-    transition: transform 0.2s linear;
-  }
-  &.active {
-    &:after {
-      border-top: $borderWidth solid $hoverColor;
-      border-right: $borderWidth solid $hoverColor;
-      transform: rotate(-45deg);
-    }
-  }
+	position: relative;
+	&:after {
+		content: "";
+		display: block;
+		width: $width;
+		height: $width;
+		border-top: $borderWidth solid $color;
+		border-right: $borderWidth solid $color;
+		border-radius: 1px;
+		position: absolute;
+		top: $top;
+		right: $right;
+		z-index: 1;
+		transform: rotate(135deg);
+		transition: border-color 0.2s linear;
+		transition: transform 0.2s linear;
+	}
+	&.active {
+		&:after {
+			border-top: $borderWidth solid $hoverColor;
+			border-right: $borderWidth solid $hoverColor;
+			transform: rotate(-45deg);
+		}
+	}
 }
+
 // светлая кнопка
 @mixin btn-light {
   border: 1px solid $btnBgLight-color;
@@ -177,4 +178,17 @@
   &:focus {
     outline: none;
   }
+}
+
+// вертикальный пунктир
+@mixin vertical-dashed {
+	margin: 0;
+	height: 60px;
+	width: 1px;
+
+	background-image: linear-gradient(to bottom, #ffffff 25%, transparent 35%);
+	background-position: 0 0px;
+	background-repeat: repeat-y;
+	background-size: 1px 14px;
+	opacity: 0.35;
 }

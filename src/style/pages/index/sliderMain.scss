@@ -1,5 +1,13 @@
 .sliderMain {
-  @include page-base(80px, 180px);
+  @include page-base(80px, 188px);
+
+  @include laptop {
+    padding-bottom: 340px;
+  }
+
+  @include phone {
+    padding-bottom: 640px;
+  }
 
   .sliderMain__container {
     @include page-container;
@@ -26,6 +34,7 @@
           width: 66px;
           height: 16px;
         }
+
         .sliderMain__arrow__left {
           transform: rotate(180deg);
           cursor: pointer;
@@ -60,7 +69,8 @@
       }
 
       .sliderMain__content__title {
-        @include block-title;
+        font-size: 35px;
+        font-family: $h1-ff;
       }
     }
 
@@ -68,7 +78,7 @@
       margin-top: 10px;
       .slick-dots {
         position: absolute;
-        bottom: -75px;
+        bottom: -45px;
         list-style: none;
         display: block;
         text-align: center;
