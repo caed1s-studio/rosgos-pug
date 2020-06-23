@@ -1,0 +1,146 @@
+.indexMain {
+	.indexMain__screen {
+		@include page-base(60px, 276px);
+		background: $main-bg-color;
+
+		.indexMain__screen__container {
+			@include page-container;
+
+			.indexMain__screen__logo {
+				width: 160px;
+				height: 18px;
+
+				svg {
+					width: 160px;
+					height: 18px;
+				}
+			}
+
+			.indexMain__screen__content {
+				margin-top: 117px;
+
+				.indexMain__screen__content__title {
+					font-family: $h1-ff;
+					font-size: 64px;
+					line-height: 75px;
+					color: $h1-color;
+
+					@include tablet {
+						font-size: 42px;
+						line-height: 56px;
+					}
+
+					@include phone {
+						font-size: 35px;
+						line-height: 48px;
+					}
+				}
+
+				.indexMain__screen__content__text {
+					margin-top: 55px;
+					font-family: $h1-text-ff;
+					font-size: 24px;
+					line-height: 35px;
+					color: $h1-color;
+
+					br {
+						@include tablet {
+							display: none;
+						}
+					}
+				}
+
+				.indexMain__screen__content__btn {
+					margin-top: 55px;
+
+					button {
+						@include btn-dark;
+						display: flex;
+						align-items: center;
+
+						// &:hover {
+						// 	background: $main-bg-color;
+						// 	color: $btnTextHDark-color;
+						// }
+
+						// &:focus {
+						// 	background: $main-bg-color;
+						// 	color: $btnTextHDark-color;
+						// 	outline: none;
+						// }
+
+						.indexMain__screen__content__btn__arrow {
+							margin-right: 14px;
+							width: 15px;
+							height: 20px;
+
+							svg {
+								width: 15px;
+								height: 20px;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.indexMain__about {
+		@include page-base(290px, 90px);
+
+		.indexMain__about__container {
+			@include page-container;
+
+			.indexMain__about__container__inner {
+				display: flex;
+
+				.indexMain__about__content {
+					margin-right: 97px;
+					max-width: 633px;
+
+					.indexMain__about__content__title {
+						@include block-title;
+					}
+
+					.indexMain__about__content__text {
+						@include block-text;
+
+						p {
+							margin: 0;
+							margin-top: 30px;
+						}
+					}
+
+					.indexMain__about__content__people {
+						margin-top: 30px;
+						display: flex;
+						align-items: center;
+
+						.indexMain__about__content__people__img {
+							margin-right: 30px;
+							max-width: 64px;
+						}
+
+						.indexMain__about__content__people__info {
+							font-size: 16px;
+							line-height: 26px;
+
+							.indexMain__about__content__people__info__name {
+								color: $main-text-color;
+							}
+
+							.indexMain__about__content__people__info__position {
+								margin-top: 15px;
+								color: $bright-text-color;
+							}
+						}
+					}
+				}
+
+				.indexMain__about__img {
+					max-width: 378px;
+				}
+			}
+		}
+	}
+}

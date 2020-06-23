@@ -1,54 +1,37 @@
 @mixin phone {
-  @media screen and (max-width: 480px) {
+  @media screen and (max-width: 575px) {
     @content;
   }
 }
 
 @mixin tablet {
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 770px) {
     @content;
   }
 }
 
 @mixin laptop {
-  @media screen and (max-width: 1050px) {
+  @media screen and (max-width: 990px) {
     @content;
   }
 }
 
 @mixin notebook {
-  @media screen and (max-width: 1370px) {
-    @content;
-  }
-}
-@mixin navigation {
-  @media screen and (max-width: 1260px) {
+  @media screen and (max-width: 1120px) {
     @content;
   }
 }
 
-//основа страницы
-@mixin page-base {
-  width: 100%;
-  // max-width: 1142px;
-  margin: 0 auto;
-  padding-bottom: 100px;
-  cursor: default;
-
-  @include phone {
-    padding-bottom: 60px;
-  }
-}
-
-//основа страницы с фоновым изображением
-@mixin page-base-main {
+// основа страницы
+@mixin page-base($padding-top, $padding-bottom) {
   width: 100%;
   margin: 0 auto;
-  cursor: default;
+  padding-top: $padding-top;
+  padding-bottom: $padding-bottom;
 
-  @include phone {
-    padding-bottom: 60px;
-  }
+  font-family: $main-text-ff;
+  color: $main-text-color;
+  cursor: default;
 }
 
 // контейнер
@@ -59,3 +42,56 @@
   margin: 0 auto;
   cursor: default;
 }
+
+@mixin block-title {
+  font-family: $block-title-ff;
+  font-size: 35px;
+  line-height: 45px;
+  color: $block-title-color;
+}
+
+@mixin block-text {
+  font-family: $main-text-ff;
+  font-size: 18px;
+  line-height: 26px;
+  color: $main-text-color;
+}
+
+// темная кнопка
+@mixin btn-dark {
+  border: 1px solid $btnBgDark-color;
+  border-radius: 145px;
+  padding: 26px 40px;
+  background: $btnBgDark-color;
+
+  font-family: $btn-ff;
+  font-size: 16px;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: $btnTextDark-color;
+
+  cursor: pointer;
+
+  transition: all 0.2s linear;
+
+  box-shadow: 0px 7px 30px rgba(154, 0, 50, 0.25);
+
+  // &:hover {
+  // 	background: $btnBgHDark-color;
+  // 	color: $btnTextHDark-color;
+  // }
+
+  // &:focus {
+  // 	background: $btnBgHDark-color;
+  // 	color: $btnTextHDark-color;
+  // 	outline: none;
+  // }
+
+  @include phone {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+}
+
+// светлая кнопка

@@ -1,0 +1,56 @@
+// цвета
+// палитра
+$shiraz-color: #ac0339;
+$iron-color: #d5d7db;
+$red-color: #ff0000;
+$tuna-color: #3c3042;
+$bleachedCedar-color: #302333;
+$white-color: #ffffff;
+$alabaster-color: #fafafa;
+$gradient1-color: linear-gradient(97.69deg, #b71c4e 1.53%, #7c032a 99.17%);
+$gradient2-color: linear-gradient(97.74deg, #b71c4e 1.53%, #7c032a 99.17%);
+$gradient3-color: linear-gradient(92.8deg, #b71c4e 1.53%, #7c032a 99.17%);
+
+// фон
+$main-bg-color: $iron-color;
+
+// заголовки
+$h1-color: $tuna-color;
+$block-title-color: $bleachedCedar-color;
+
+// цвет текста
+$main-text-color: $tuna-color; // главный цвет текста
+$bright-text-color: $shiraz-color; // цвет выделенного текста
+
+//кнопки
+// темная кнопка
+$btnBgDark-color: $shiraz-color;
+$btnTextDark-color: $white-color;
+$btnBgHDark-color: $white-color;
+$btnTextHDark-color: $shiraz-color;
+//светлая кнопка
+$btnBgLight-color: $white-color;
+$btnTextLight-color: $shiraz-color;
+
+// шрифты
+// подключенные
+$RobotoRegular-ff: "RobotoRegular";
+$RobotoBold-ff: "RobotoBold";
+$RobotoMedium-ff: "RobotoMedium";
+$GothamProRegular-ff: "GothamPro";
+$GothamProBold-ff: "GothamPro-Bold";
+$GothamProMedium-ff: "GothamPro-Medium";
+$GothamProItalic-ff: "GothamPro-Italic";
+
+// заголовки
+$h1-ff: $GothamProBold-ff;
+$block-title-ff: $GothamProMedium-ff;
+
+// подзаголовок
+$h1-text-ff: $RobotoMedium-ff;
+
+// текст
+$main-text-ff: $RobotoRegular-ff;
+
+// кнопки
+$btn-ff: $GothamProRegular-ff;
