@@ -1,23 +1,61 @@
 @mixin phone {
-	@media screen and (max-width: 480px) {
-		@content;
-	}
+  @media screen and (max-width: 480px) {
+    @content;
+  }
 }
 
 @mixin tablet {
-	@media screen and (max-width: 768px) {
-		@content;
-	}
+  @media screen and (max-width: 768px) {
+    @content;
+  }
 }
 
 @mixin laptop {
-	@media screen and (max-width: 1050px) {
-		@content;
-	}
+  @media screen and (max-width: 1050px) {
+    @content;
+  }
 }
 
 @mixin notebook {
-	@media screen and (max-width: 1370px) {
-		@content;
-	}
+  @media screen and (max-width: 1370px) {
+    @content;
+  }
+}
+@mixin navigation {
+  @media screen and (max-width: 1260px) {
+    @content;
+  }
+}
+
+//основа страницы
+@mixin page-base {
+  width: 100%;
+  // max-width: 1142px;
+  margin: 0 auto;
+  padding-bottom: 100px;
+  cursor: default;
+
+  @include phone {
+    padding-bottom: 60px;
+  }
+}
+
+//основа страницы с фоновым изображением
+@mixin page-base-main {
+  width: 100%;
+  margin: 0 auto;
+  cursor: default;
+
+  @include phone {
+    padding-bottom: 60px;
+  }
+}
+
+// контейнер
+@mixin page-container {
+  width: 100%;
+  max-width: 1110px;
+  padding: 0 20px;
+  margin: 0 auto;
+  cursor: default;
 }
