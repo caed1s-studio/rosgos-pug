@@ -21,6 +21,43 @@ if ($(window).width() > "1050") {
   });
 }
 
+if ($(window).width() < "1050" && $(window).width() >= "770") {
+  $(".easyMain__section1__items").slick({
+    infinite: true,
+    slidesToShow: 3,
+    cssEase: "linear",
+    autoplaySpeed: 0,
+    arrows: false,
+    dots: true,
+  });
+} else if ($(window).width() < "770" && $(window).width() >= "575") {
+  $(".easyMain__section1__items").slick({
+    infinite: true,
+    slidesToShow: 2,
+    cssEase: "linear",
+    autoplaySpeed: 0,
+    arrows: false,
+    dots: true,
+  });
+} else if ($(window).width() < "575") {
+  $(".easyMain__section1__items").slick({
+    infinite: true,
+    slidesToShow: 1,
+    cssEase: "linear",
+    autoplaySpeed: 0,
+    arrows: false,
+    dots: true,
+  });
+}
+
+$(".js-tab-trigger-questionsMain").click(function () {
+  var id = $(this).attr("data-tab");
+  $(this).toggleClass("active");
+  $('.js-tab-content-questionsMain[data-tab="' + id + '"]').toggleClass(
+    "active"
+  );
+});
+
 // if ($(window).width() > "768") {
 //   $(".educationSlider__content__spikers").slick({
 //     infinite: true,
