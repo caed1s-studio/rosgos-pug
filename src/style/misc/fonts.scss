@@ -1,13 +1,40 @@
-// @font-face {
-//     font-family: 'century_gothicss';
-//     src: url('../fonts/CenturyGothic.woff') format('woff');
-//     font-weight: normal;
-//     font-style: normal;
-// }
+@font-face {
+	font-family: "RobotoRegular";
+	src: local("RobotoRegular"), local("RobotoRegular"), url("../fonts/Roboto-Regular.ttf") format("truetype");
+}
+@font-face {
+	font-family: "RobotoMedium";
+	src: local("RobotoMedium"), local("RobotoMedium"), url("../fonts/Roboto-Medium.ttf") format("truetype");
+}
+@font-face {
+	font-family: 'RobotoBold';
+	src: local("RobotoBold"), local("RobotoBold"), url("../fonts/Roboto-Bold.ttf") format("truetype");
+}
 
-// @mixin font($style: regular) {
-//     @if $style == regular {
-//         font-family: 'century_gothicss', Arial, sans-serif;
-//         font-weight: 500;
-//     }
-// }
+@font-face {
+	font-family: 'GothamPro';
+	src: local('GothamPro'), local('GothamPro'), url('../fonts/GothamPro.woff2') format('woff2'),
+		url('../fonts/GothamPro.woff') format('woff'), url('../fonts/GothamPro.ttf') format('truetype'),
+		url('../fonts/GothamPro.eot') format('embedded-opentype');
+}
+
+@font-face {
+	font-family: 'GothamPro-Bold';
+	src: local('GothamPro-Bold'), local('GothamPro-Bold'), url('../fonts/GothamPro-Bold.woff2') format('woff2'),
+		url('../fonts/GothamPro-Bold.woff') format('woff'), url('../fonts/GothamPro-Bold.ttf') format('truetype'),
+		url('../fonts/GothamPro-Bold.eot') format('embedded-opentype');
+}
+
+@font-face {
+	font-family: 'GothamPro-Italic';
+	src: local('GothamPro-Italic'), local('GothamPro-Italic'), url('../fonts/GothamPro-Italic.woff2') format('woff2'),
+		url('../fonts/GothamPro-Italic.woff') format('woff'), url('../fonts/GothamPro-Italic.ttf') format('truetype'),
+		url('../fonts/GothamPro-Italic.eot') format('embedded-opentype');
+}
+
+@font-face {
+	font-family: 'GothamPro-Medium';
+	src: local('GothamPro-Medium'), local('GothamPro-Medium'), url('../fonts/GothamPro-Medium.woff2') format('woff2'),
+		url('../fonts/GothamPro-Medium.woff') format('woff'), url('../fonts/GothamPro-Medium.ttf') format('truetype'),
+		url('../fonts/GothamPro-Medium.eot') format('embedded-opentype');
+}
