@@ -29,7 +29,7 @@
 					.questionsMain__section1__number {
 						margin-right: 25px;
 						font-size: 24px;
-						color: #9a0032;
+						color: $bright2-text-color;
 						font-family: $h1-ff;
 					}
 
@@ -37,7 +37,7 @@
 						.questionsMain__section1__inner {
 							@include tablet {
 								cursor: pointer;
-								@include rotate-arrow(15px, #9a0032, #9a0032, 0px, 5px, 2px);
+								@include rotate-arrow(15px, $bright2-text-color, $bright2-text-color, 0px, 5px, 2px);
 							}
 
 							.questionsMain__section1__title {

@@ -1,80 +1,93 @@
 .scopeMain {
-  @include page-base(80px, 80px);
-  background: linear-gradient(93.11deg, #b71c4e 1.53%, #7c032a 99.17%);
-  .scopeMain__container {
-    @include page-container;
-    color: $white-color;
-    .scopeMain__content__title {
-      @include block-title;
-      color: $white-color;
-    }
-    .scopeMain__content__text {
-      margin-top: 30px;
-      width: 50%;
+	@include page-base(80px, 80px);
+	background: linear-gradient(93.11deg, #b71c4e 1.53%, #7c032a 99.17%);
 
-      @include tablet {
-        width: 100%;
-      }
-    }
-    .scopeMain__content__inputs {
-      margin: 60px 0;
-      .scopeMain__content__input {
-        width: 408px;
+	.scopeMain__container {
+		@include page-container;
+		color: $white-color;
 
-        border: 1px solid $grey-color;
-        border-radius: 145px;
-        padding: 26px 40px;
-        background: none;
+		.scopeMain__content__title {
+			@include block-title;
+			color: $white-color;
+		}
 
-        font-family: $btn-ff;
-        font-size: 16px;
-        line-height: 24px;
-        color: $grey-color;
+		.scopeMain__content__text {
+			margin-top: 30px;
+			width: 50%;
 
-        transition: all 0.2s linear;
+			@include tablet {
+				width: 100%;
+			}
+		}
 
-        box-shadow: 0px 7px 30px rgba(154, 0, 50, 0.25);
+		.scopeMain__content__inputs {
+			margin: 60px 0;
 
-        // &:hover {
-        // 	background: $btnBgHDark-color;
-        // 	color: $btnTextHDark-color;
-        // }
+			.scopeMain__content__input {
+				width: 408px;
 
-        // &:focus {
-        // 	background: $btnBgHDark-color;
-        // 	color: $btnTextHDark-color;
-        // 	outline: none;
-        // }
+				border: 1px solid $input-border-color;
+				border-radius: 145px;
+				padding: 26px 40px;
+				background: none;
 
-        &:focus {
-          outline: none;
-        }
+				font-family: $input-ff;
+				font-size: 16px;
+				line-height: 24px;
+				color: $input-text-color;
 
-        @include phone {
-          width: 100%;
-          display: flex;
-          justify-content: center;
-        }
-      }
-      .scopeMain__content__btn {
-        @include btn-light;
-        min-width: 227.54px;
-        margin-left: 40px;
+				transition: all 0.2s linear;
 
-        @include tablet {
-          margin-top: 20px;
-          margin-left: 0;
-          width: 408px;
-        }
-        @include phone {
-          width: 100%;
-        }
-      }
-    }
+				box-shadow: 0px 7px 30px rgba(154, 0, 50, 0.25);
 
-    .scopeMain__content__second__text {
-      color: $white-color;
-      border-bottom: 1px solid $white-color;
-    }
-  }
+				&::placeholder {
+					color: $input-placeholder-color;
+				}
+
+				// &:hover {
+				// 	background: $btnBgHDark-color;
+				// 	color: $btnTextHDark-color;
+				// }
+
+				// &:focus {
+				// 	background: $btnBgHDark-color;
+				// 	color: $btnTextHDark-color;
+				// 	outline: none;
+				// }
+
+				&:focus {
+					outline: none;
+				}
+
+				&.error {
+					border: 1px solid $input-error-color;
+				}
+
+				@include phone {
+					width: 100%;
+					display: flex;
+					justify-content: center;
+				}
+			}
+			.scopeMain__content__btn {
+				@include btn-light;
+				min-width: 227.54px;
+				margin-left: 40px;
+
+				@include tablet {
+					margin-top: 20px;
+					margin-left: 0;
+					width: 408px;
+				}
+				@include phone {
+					width: 100%;
+				}
+			}
+		}
+
+		.scopeMain__content__second__text {
+			color: $white-color;
+			border-bottom: 1px solid $white-color;
+		}
+	}
 }

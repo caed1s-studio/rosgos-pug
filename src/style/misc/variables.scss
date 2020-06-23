@@ -1,6 +1,7 @@
 // цвета
 // палитра
 $shiraz-color: #ac0339;
+$shiraz2-color: #9a0032;
 $iron-color: #d5d7db;
 $red-color: #ff0000;
 $tuna-color: #3c3042;
@@ -29,6 +30,7 @@ $small-title-color: $bleachedCedar-color;
 $main-text-color: $tuna-color; // главный цвет текста
 $light-text-color: $white-color; // белый текст
 $bright-text-color: $shiraz-color; // цвет выделенного текста
+$bright2-text-color: $shiraz2-color; // цвет выделенного текста
 
 //кнопки
 // темная кнопка
@@ -39,6 +41,12 @@ $btnTextHDark-color: $shiraz-color;
 //светлая кнопка
 $btnBgLight-color: $white-color;
 $btnTextLight-color: $shiraz-color;
+
+//цвет инпутов
+$input-border-color: $grey-color;
+$input-placeholder-color: $grey-color;
+$input-text-color: $white-color;
+$input-error-color: $red-color;
 
 // карточки
 $card-bg-color: $white-color;
@@ -62,6 +70,9 @@ $try-text-ff: $GothamProBold-ff;
 
 //карточки
 $card-title-ff: $GothamProBold-ff;
+
+// инпуты
+$input-ff: $GothamProBold-ff;
 
 // подзаголовок
 $h1-text-ff: $RobotoMedium-ff;
