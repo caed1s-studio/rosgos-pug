@@ -50,6 +50,26 @@ if ($(window).width() < "1050" && $(window).width() >= "770") {
   });
 }
 
+if ($(window).width() < "1050" && $(window).width() >= "770") {
+  $(".cards__inner").slick({
+    infinite: true,
+    slidesToShow: 3,
+    cssEase: "linear",
+    autoplaySpeed: 0,
+    arrows: false,
+    dots: true,
+  });
+} else if ($(window).width() < "770") {
+  $(".cards__inner").slick({
+    infinite: true,
+    slidesToShow: 3,
+    cssEase: "linear",
+    autoplaySpeed: 0,
+    arrows: false,
+    dots: true,
+  });
+}
+
 $(".js-tab-trigger-questionsMain").click(function () {
   var id = $(this).attr("data-tab");
   $(this).toggleClass("active");

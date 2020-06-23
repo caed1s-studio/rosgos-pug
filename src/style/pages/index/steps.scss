@@ -1,102 +1,102 @@
 .steps {
-	.steps__main {
-		@include page-base(0, 0);
-		background: $main-bg-color;
+  .steps__main {
+    @include page-base(0, 0);
+    background: $main-bg-color;
 
-		@include notebook {
-			padding-bottom: 40px;
-		}
+    @include notebook {
+      padding-bottom: 40px;
+    }
 
-		@include laptop {
-			padding-bottom: 80px;
-		}
+    @include laptop {
+      padding-bottom: 80px;
+    }
 
-		@include tablet {
-			padding-bottom: 40px;
-		}
+    @include tablet {
+      padding-bottom: 40px;
+    }
 
-		.steps__main__container {
-			@include page-container;
+    .steps__main__container {
+      @include page-container;
 
-			.steps__main__inner {
-				display: flex;
+      .steps__main__inner {
+        display: flex;
 
-				@include tablet {
-					flex-wrap: wrap-reverse;
-				}
+        @include tablet {
+          flex-wrap: wrap-reverse;
+        }
 
-				.steps__main__img {
-					max-width: 595px;
-					min-width: 520px;
+        .steps__main__img {
+          max-width: 595px;
+          min-width: 520px;
 
-					@include laptop {
-						margin-top: 40px;
-						min-width: 380px;
-					}
+          @include laptop {
+            margin-top: 40px;
+            min-width: 380px;
+          }
 
-					@include tablet {
-						margin: 0 auto;
-						min-width: 0;
-					}
-				}
+          @include tablet {
+            margin: 0 auto;
+            min-width: 0;
+          }
+        }
 
-				.steps__main__content {
-					margin-top: 128px;
-					margin-left: 43px;
-					max-width: 553px;
+        .steps__main__content {
+          margin-top: 128px;
+          margin-left: 43px;
+          max-width: 553px;
 
-					@include notebook {
-						margin-left: 20px;
-					}
+          @include notebook {
+            margin-left: 20px;
+          }
 
-					@include laptop {
-						margin-left: 0;
-					}
+          @include laptop {
+            margin-left: 0;
+          }
 
-					@include tablet {
-						margin-top: 80px;
-					}
+          @include tablet {
+            margin-top: 80px;
+          }
 
-					.steps__main__content__title {
-						@include block-title;
-					}
+          .steps__main__content__title {
+            @include block-title;
+          }
 
-					.steps__main__content__list {
-						margin-top: 30px;
+          .steps__main__content__list {
+            margin-top: 30px;
 
-						.steps__main__content__list__item {
-							margin-bottom: 40px;
-							padding-left: 60px;
-							position: relative;
+            .steps__main__content__list__item {
+              margin-bottom: 40px;
+              padding-left: 60px;
+              position: relative;
 
-							&:last-child {
-								margin-bottom: 0;
-							}
+              &:last-child {
+                margin-bottom: 0;
+              }
 
-							.steps__main__content__list__item__title {
-								@include small-title;
-							}
+              .steps__main__content__list__item__title {
+                @include small-title;
+              }
 
-							.steps__main__content__list__item__text {
-								margin-top: 12px;
-								@include block-text;
-							}
+              .steps__main__content__list__item__text {
+                margin-top: 12px;
+                @include block-text;
+              }
 
-							.steps__main__content__list__item__number {
-								position: absolute;
-								top: 5px;
-								left: 0;
-								z-index: 1;
+              .steps__main__content__list__item__number {
+                position: absolute;
+                top: 5px;
+                left: 0;
+                z-index: 1;
 
-								font-family: $block-title-ff;
-								font-size: 24px;
-								line-height: 24px;
-								color: $bright-text-color;
-							}
-						}
-					}
-				}
-			}
-		}
-	}
+                font-family: $block-title-ff;
+                font-size: 24px;
+                line-height: 24px;
+                color: $bright-text-color;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
 }

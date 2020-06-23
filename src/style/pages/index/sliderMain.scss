@@ -60,8 +60,7 @@
       }
 
       .sliderMain__content__title {
-        font-size: 35px;
-        font-family: $h1-ff;
+        @include block-title;
       }
     }
 

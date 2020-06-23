@@ -1,25 +1,25 @@
 @mixin phone {
-	@media screen and (max-width: 575px) {
-		@content;
-	}
+  @media screen and (max-width: 575px) {
+    @content;
+  }
 }
 
 @mixin tablet {
-	@media screen and (max-width: 770px) {
-		@content;
-	}
+  @media screen and (max-width: 770px) {
+    @content;
+  }
 }
 
 @mixin laptop {
-	@media screen and (max-width: 990px) {
-		@content;
-	}
+  @media screen and (max-width: 990px) {
+    @content;
+  }
 }
 
 @mixin notebook {
-	@media screen and (max-width: 1120px) {
-		@content;
-	}
+  @media screen and (max-width: 1120px) {
+    @content;
+  }
 }
 @mixin slider-width {
   @media screen and (max-width: 1050px) {
@@ -29,85 +29,88 @@
 
 // основа страницы
 @mixin page-base($padding-top, $padding-bottom) {
-	width: 100%;
-	margin: 0 auto;
-	padding-top: $padding-top;
-	padding-bottom: $padding-bottom;
+  width: 100%;
+  margin: 0 auto;
+  padding-top: $padding-top;
+  padding-bottom: $padding-bottom;
 
-	font-family: $main-text-ff;
-	color: $main-text-color;
-	cursor: default;
+  font-family: $main-text-ff;
+  color: $main-text-color;
+  cursor: default;
 }
 
 // контейнер
 @mixin page-container {
-	width: 100%;
-	max-width: 1150px;
-	padding: 0 20px;
-	margin: 0 auto;
-	cursor: default;
+  width: 100%;
+  max-width: 1150px;
+  padding: 0 20px;
+  margin: 0 auto;
+  cursor: default;
 }
 
 @mixin block-title {
-	font-family: $block-title-ff;
-	font-size: 35px;
-	line-height: 45px;
-	color: $block-title-color;
+  font-family: $block-title-ff;
+  font-size: 35px;
+  line-height: 45px;
+  color: $block-title-color;
 
-	@include phone {
-		font-size: 30px;
-	}
+  @include phone {
+    font-size: 30px;
+  }
 }
 
 @mixin small-title {
-	font-family: $card-title-ff;
-	font-size: 18px;
-	line-height: 24px;
-	color: $small-title-color;
+  font-family: $card-title-ff;
+  font-size: 18px;
+  line-height: 24px;
+  color: $small-title-color;
 }
 
 @mixin block-text {
-	font-family: $main-text-ff;
-	font-size: 18px;
-	line-height: 26px;
-	color: $main-text-color;
+  font-family: $main-text-ff;
+  font-size: 18px;
+  line-height: 26px;
+  color: $main-text-color;
 }
 
 // темная кнопка
 @mixin btn-dark {
-	border: 1px solid $btnBgDark-color;
-	border-radius: 145px;
-	padding: 26px 40px;
-	background: $btnBgDark-color;
+  border: 1px solid $btnBgDark-color;
+  border-radius: 145px;
+  padding: 26px 40px;
+  background: $btnBgDark-color;
 
-	font-family: $btn-ff;
-	font-size: 16px;
-	line-height: 24px;
-	text-transform: uppercase;
-	color: $btnTextDark-color;
+  font-family: $btn-ff;
+  font-size: 16px;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: $btnTextDark-color;
 
-	cursor: pointer;
+  cursor: pointer;
 
-	transition: all 0.2s linear;
+  transition: all 0.2s linear;
 
-	box-shadow: 0px 7px 30px rgba(154, 0, 50, 0.25);
+  box-shadow: 0px 7px 30px rgba(154, 0, 50, 0.25);
 
-	// &:hover {
-	// 	background: $btnBgHDark-color;
-	// 	color: $btnTextHDark-color;
-	// }
+  // &:hover {
+  // 	background: $btnBgHDark-color;
+  // 	color: $btnTextHDark-color;
+  // }
 
-	// &:focus {
-	// 	background: $btnBgHDark-color;
-	// 	color: $btnTextHDark-color;
-	// 	outline: none;
-	// }
+  // &:focus {
+  // 	background: $btnBgHDark-color;
+  // 	color: $btnTextHDark-color;
+  // 	outline: none;
+  // }
 
-	@include phone {
-		width: 100%;
-		display: flex;
-		justify-content: center;
-	}
+  @include phone {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  &:focus {
+    outline: none;
+  }
 }
 
 @mixin rotate-arrow($width, $color, $hoverColor, $right, $top, $borderWidth) {
@@ -138,37 +141,40 @@
 }
 // светлая кнопка
 @mixin btn-light {
-	border: 1px solid $btnBgLight-color;
-	border-radius: 145px;
-	padding: 26px 40px;
-	background: $btnBgLight-color;
+  border: 1px solid $btnBgLight-color;
+  border-radius: 145px;
+  padding: 26px 40px;
+  background: $btnBgLight-color;
 
-	font-family: $btn-ff;
-	font-size: 16px;
-	line-height: 24px;
-	text-transform: uppercase;
-	color: $btnTextLight-color;
+  font-family: $btn-ff;
+  font-size: 16px;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: $btnTextLight-color;
 
-	cursor: pointer;
+  cursor: pointer;
 
-	transition: all .2s linear;
+  transition: all 0.2s linear;
 
-	box-shadow: 0px 7px 30px rgba(154, 0, 50, 0.25);
+  box-shadow: 0px 7px 30px rgba(154, 0, 50, 0.25);
 
-	// &:hover {
-	// 	background: $btnBgHDark-color;
-	// 	color: $btnTextHDark-color;
-	// }
+  // &:hover {
+  // 	background: $btnBgHDark-color;
+  // 	color: $btnTextHDark-color;
+  // }
 
-	// &:focus {
-	// 	background: $btnBgHDark-color;
-	// 	color: $btnTextHDark-color;
-	// 	outline: none;
-	// }
+  // &:focus {
+  // 	background: $btnBgHDark-color;
+  // 	color: $btnTextHDark-color;
+  // 	outline: none;
+  // }
 
-	@include phone {
-		width: 100%;
-		display: flex;
-		justify-content: center;
-	}
+  @include phone {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  &:focus {
+    outline: none;
+  }
 }

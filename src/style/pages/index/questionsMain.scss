@@ -4,8 +4,7 @@
     @include page-container;
 
     .questionsMain__content__title {
-      font-size: 35px;
-      font-family: $h1-ff;
+      @include block-title;
     }
 
     .questionsMain__content__section1 {

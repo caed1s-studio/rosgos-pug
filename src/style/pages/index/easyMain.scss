@@ -4,8 +4,7 @@
     @include page-container;
 
     .easyMain__content__title {
-      font-size: 35px;
-      font-family: $h1-ff;
+      @include block-title;
     }
     .easyMain__content__section1 {
       margin-top: 20px;
