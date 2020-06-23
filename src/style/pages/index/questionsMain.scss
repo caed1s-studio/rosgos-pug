@@ -1,70 +1,77 @@
 .questionsMain {
-	@include page-base(48px, 90px);
-	.questionsMain__container {
-		@include page-container;
+  @include page-base(48px, 90px);
+  .questionsMain__container {
+    @include page-container;
 
+    .questionsMain__content__title {
       @include block-title;
     }
 
-					grid-template-columns: 1fr;
-				}
+    .questionsMain__content__section1 {
+      .questionsMain__section1__items {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
 
-				.questionsMain__section1__item {
-					display: flex;
-					width: 100%;
-					margin-top: 60px;
+        @include tablet {
+          grid-template-columns: 1fr;
+        }
 
-					@include tablet {
-						display: block;
-					}
+        .questionsMain__section1__item {
+          display: flex;
+          width: 100%;
+          margin-top: 60px;
 
-					.questionsMain__section1__number {
-						margin-right: 25px;
-						font-size: 24px;
-						color: #9a0032;
-						font-family: $h1-ff;
-					}
+          @include tablet {
+            display: block;
+          }
 
-					.questionsMain__section1__main {
-						.questionsMain__section1__inner {
-							@include tablet {
-								cursor: pointer;
-								@include rotate-arrow(15px, #9a0032, #9a0032, 0px, 5px, 2px);
-							}
+          .questionsMain__section1__number {
+            margin-right: 25px;
+            font-size: 24px;
+            color: #9a0032;
+            font-family: $h1-ff;
+          }
 
-							.questionsMain__section1__title {
-								font-family: $RobotoBold-ff;
-								margin-top: 5px;
-								width: 90%;
-							}
-						}
+          .questionsMain__section1__main {
+            .questionsMain__section1__inner {
+              @include tablet {
+                cursor: pointer;
+                @include rotate-arrow(15px, #9a0032, #9a0032, 0px, 5px, 2px);
+              }
 
-						.questionsMain__section1__text {
-							margin-top: 15px;
+              .questionsMain__section1__title {
+                font-family: $RobotoBold-ff;
+                margin-top: 5px;
+                width: 90%;
+              }
+            }
 
-							@include tablet {
-								display: none;
-								transition: all 0.2 linear;
+            .questionsMain__section1__text {
+              margin-top: 15px;
 
-								&.active {
-									display: block;
-								}
-							}
-						}
-					}
-					.questionsMain__section1__line {
-						display: none;
+              @include tablet {
+                display: none;
+                transition: all 0.2 linear;
 
-						margin-top: 30px;
-						border-bottom: 1px solid #000000;
-						opacity: 0.2;
+                &.active {
+                  display: block;
+                }
+              }
+            }
+          }
+          .questionsMain__section1__line {
+            display: none;
 
-						@include tablet {
-							display: block;
-						}
-					}
-				}
-			}
-		}
-	}
+            margin-top: 30px;
+            border-bottom: 1px solid #000000;
+            opacity: 0.2;
+
+            @include tablet {
+              display: block;
+            }
+          }
+        }
+      }
+    }
+  }
 }
