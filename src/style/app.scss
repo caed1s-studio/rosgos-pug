@@ -1,0 +1,20 @@
+//misc
+@import "misc/fonts";
+@import "misc/mixins";
+@import "misc/normalize";
+@import "misc/adjustment";
+@import "misc/variables";
+
+//layout
+//header-common
+@import "pages/common/header";
+@import "pages/common/footer";
+@import "pages/common/form";
+
+//index
+
+@import "pages/index/main";
+
+//media
+
+@import "misc/media";
