@@ -122,7 +122,16 @@
 						}
 
 						.indexMain__about__content__people__info {
+							font-size: 16px;
+							line-height: 26px;
+
 							.indexMain__about__content__people__info__name {
+								color: $main-text-color;
+							}
+
+							.indexMain__about__content__people__info__position {
+								margin-top: 15px;
+								color: $bright-text-color;
 							}
 						}
 					}
