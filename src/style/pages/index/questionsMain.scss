@@ -3,17 +3,9 @@
 	.questionsMain__container {
 		@include page-container;
 
-		.questionsMain__content__title {
-			font-size: 35px;
-			font-family: $h1-ff;
-		}
+      @include block-title;
+    }
 
-		.questionsMain__content__section1 {
-			.questionsMain__section1__items {
-				display: grid;
-				grid-template-columns: 1fr 1fr;
-
-				@include tablet {
 					grid-template-columns: 1fr;
 				}
 

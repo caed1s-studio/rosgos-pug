@@ -1,122 +1,122 @@
 .easyMain {
-	@include page-base(202px, 71px);
-	background: $light-bg-color;
-	position: relative;
+  @include page-base(202px, 71px);
+  background: $light-bg-color;
+  position: relative;
 
-	.easyMain__container {
-		@include page-container;
+  .easyMain__container {
+    @include page-container;
 
-		.easyMain__content__title {
-			font-size: 35px;
-			font-family: $h1-ff;
-		}
+    .easyMain__content__title {
+      font-size: 35px;
+      font-family: $h1-ff;
+    }
 
-		.easyMain__content__section1 {
-			margin-top: 20px;
+    .easyMain__content__section1 {
+      margin-top: 20px;
 
-			.easyMain__section1__items {
-				display: flex;
-				.slick-dots {
-					position: absolute;
-					bottom: -75px;
-					list-style: none;
-					display: block;
-					text-align: center;
-					padding: 0;
-					margin: 0;
-					width: 100%;
+      .easyMain__section1__items {
+        display: flex;
+        .slick-dots {
+          position: absolute;
+          bottom: -75px;
+          list-style: none;
+          display: block;
+          text-align: center;
+          padding: 0;
+          margin: 0;
+          width: 100%;
 
-					li {
-						position: relative;
-						display: inline-block;
-						height: 20px;
-						width: 20px;
-						margin: 0 5px;
-						padding: 0;
+          li {
+            position: relative;
+            display: inline-block;
+            height: 20px;
+            width: 20px;
+            margin: 0 5px;
+            padding: 0;
 
-						cursor: pointer;
+            cursor: pointer;
 
-						button {
-							background: transparent;
-							display: block;
-							outline: none;
-							line-height: 0px;
-							font-size: 0px;
-							color: transparent;
-							padding: 5px;
-							width: 20px;
-							height: 20px;
-							cursor: pointer;
-							border: 2px solid $btnBgDark-color;
-							border-radius: 50%;
-							&:hover,
-							&:focus {
-								outline: none;
+            button {
+              background: transparent;
+              display: block;
+              outline: none;
+              line-height: 0px;
+              font-size: 0px;
+              color: transparent;
+              padding: 5px;
+              width: 20px;
+              height: 20px;
+              cursor: pointer;
+              border: 2px solid $btnBgDark-color;
+              border-radius: 50%;
+              &:hover,
+              &:focus {
+                outline: none;
 
-								&:before {
-									opacity: 0;
-								}
-							}
+                &:before {
+                  opacity: 0;
+                }
+              }
 
-							&:before {
-								position: absolute;
-								top: 0;
-								left: 0;
-								display: block;
-								content: " ";
-								width: 20px;
-								background-color: $btnBgDark-color;
-								height: 20px;
-								font-size: 80px;
-								line-height: 20px;
-								text-align: center;
-								border-radius: 50%;
-								color: #c4c4c4;
-								opacity: 0;
-								-webkit-font-smoothing: antialiased;
-								-moz-osx-font-smoothing: grayscale;
-							}
-						}
+              &:before {
+                position: absolute;
+                top: 0;
+                left: 0;
+                display: block;
+                content: " ";
+                width: 20px;
+                background-color: $btnBgDark-color;
+                height: 20px;
+                font-size: 80px;
+                line-height: 20px;
+                text-align: center;
+                border-radius: 50%;
+                color: #c4c4c4;
+                opacity: 0;
+                -webkit-font-smoothing: antialiased;
+                -moz-osx-font-smoothing: grayscale;
+              }
+            }
 
-						&.slick-active button:before {
-							color: #c4c4c4;
-							opacity: 100%;
-						}
-					}
-				}
+            &.slick-active button:before {
+              color: #c4c4c4;
+              opacity: 100%;
+            }
+          }
+        }
 
-				.easyMain__section1__item {
-					width: 25%;
-					margin-left: 25px;
+        .easyMain__section1__item {
+          width: 25%;
+          margin-left: 25px;
 
-					@include slider-width {
-						width: 90% !important;
-						margin-left: 30px;
-					}
+          @include slider-width {
+            width: 90% !important;
+            margin-left: 30px;
+          }
 
-					@include phone {
-						width: 100% !important;
-						margin-left: 0;
-					}
+          @include phone {
+            width: 100% !important;
+            margin-left: 0;
+          }
 
-					&:first-child {
-						margin-left: 0;
-					}
+          &:first-child {
+            margin-left: 0;
+          }
 
-					.easyMain__section1__item__img {
-						margin-top: 25px;
-					}
+          .easyMain__section1__item__img {
+            margin-top: 25px;
+          }
 
-					.easyMain__section1__item__title {
-						margin: 25px 0 10px 0;
-						font-family: $h1-ff;
-					}
+          .easyMain__section1__item__title {
+            margin: 25px 0 10px 0;
+            font-family: $h1-ff;
+          }
 
-					.easyMain__section1__item__text {
-						font-family: $RobotoRegular-ff;
-					}
-				}
-			}
-		}
-	}
+          .easyMain__section1__item__text {
+            font-family: $RobotoRegular-ff;
+          }
+        }
+      }
+    }
+  }
 }

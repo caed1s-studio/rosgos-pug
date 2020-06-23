@@ -1,84 +1,148 @@
 .cards {
-	position: absolute;
-	top: -430px;
-	left: 50%;
-	z-index: 10;
-	transform: translate3d(-50%, 0, 0);
-	max-width: 1110px;
+  position: absolute;
+  top: -430px;
+  left: 50%;
+  z-index: 10;
+  transform: translate3d(-50%, 0, 0);
+  max-width: 1110px;
 
-	@media screen and (max-width: 1050px) {
-	}
+  @include tablet {
+    left: 60%;
+  }
 
-	.cards__inner {
-		display: flex;
-		justify-content: space-between;
+  @media screen and (max-width: 1050px) {
+  }
 
-		.cards__item {
-			margin-right: 30px;
-			width: 255px;
-			height: 306px;
-			padding: 65px 33px;
-			text-align: center;
+  .cards__inner {
+    display: flex;
+    justify-content: space-between;
+    .slick-dots {
+      position: absolute;
+      bottom: -75px;
+      list-style: none;
+      display: block;
+      text-align: center;
+      padding: 0;
+      margin: 0;
+      width: 100%;
+      li {
+        position: relative;
+        display: inline-block;
+        height: 20px;
+        width: 20px;
+        margin: 0 5px;
+        padding: 0;
 
-			background: $card-bg-color;
-			box-shadow: 0px 4px 40px rgba(202, 207, 215, 0.5);
-			border-radius: 10px;
+        cursor: pointer;
+        button {
+          background: transparent;
+          display: block;
+          outline: none;
+          line-height: 0px;
+          font-size: 0px;
+          color: transparent;
+          padding: 5px;
+          width: 20px;
+          height: 20px;
+          cursor: pointer;
+          border: 2px solid #ac0339;
+          border-radius: 50%;
+          &:hover,
+          &:focus {
+            outline: none;
+            &:before {
+              opacity: 0;
+            }
+          }
+          &:before {
+            position: absolute;
+            top: 0;
+            left: 0;
+            display: block;
+            content: " ";
+            width: 20px;
+            background-color: #ac0339;
+            height: 20px;
+            font-size: 80px;
+            line-height: 20px;
+            text-align: center;
+            border-radius: 50%;
+            color: #c4c4c4;
+            opacity: 0;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+          }
+        }
+        &.slick-active button:before {
+          color: #c4c4c4;
+          opacity: 100%;
+        }
+      }
+    }
 
-			&:last-child {
-				margin-right: 0;
-			}
+    .cards__item {
+      margin-right: 30px;
+      width: 255px !important;
+      height: 306px;
+      padding: 65px 33px;
+      text-align: center;
 
-			@media screen and (max-width: 1050px) {
-			}
+      background: $card-bg-color;
+      box-shadow: 0px 4px 40px rgba(202, 207, 215, 0.5);
+      border-radius: 10px;
 
-			@include laptop {
-				width: 300px;
-			}
+      &:last-child {
+        margin-right: 0;
+      }
 
-			@include tablet {
-				width: 255px;
-			}
+      @include laptop {
+        width: 300px !important;
+      }
 
-			@include phone {
-				width: 246px;
-			}
+      @include tablet {
+        width: 255px !important;
+      }
 
-			.cards__item__img {
-				height: 40px;
-				display: flex;
-				justify-content: center;
+      @include phone {
+        width: 255px !important;
+      }
 
-				.cards__item__img1 {
-					width: 40px;
-					height: 40px;
-				}
+      .cards__item__img {
+        height: 40px;
+        display: flex;
+        justify-content: center;
 
-				.cards__item__img2 {
-					width: 41px;
-					height: 40px;
-				}
-				.cards__item__img3 {
-					width: 40px;
-					height: 40px;
-				}
-				.cards__item__img4 {
-					width: 40px;
-					height: 40px;
-				}
-			}
+        .cards__item__img1 {
+          width: 40px;
+          height: 40px;
+        }
 
-			.cards__item__title {
-				margin-top: 20px;
-				@include small-title;
-			}
+        .cards__item__img2 {
+          width: 41px;
+          height: 40px;
+        }
+        .cards__item__img3 {
+          width: 40px;
+          height: 40px;
+        }
+        .cards__item__img4 {
+          width: 40px;
+          height: 40px;
+        }
+      }
 
-			.cards__item__text {
-				margin-top: 14px;
-				font-family: $main-text-ff;
-				font-size: 16px;
-				line-height: 24px;
-				color: $main-text-color;
-			}
-		}
-	}
+      .cards__item__title {
+        margin-top: 20px;
+        @include small-title;
+      }
+
+      .cards__item__text {
+        margin-top: 14px;
+        font-family: $main-text-ff;
+        font-size: 16px;
+        line-height: 24px;
+        color: $main-text-color;
+      }
+    }
+  }
 }

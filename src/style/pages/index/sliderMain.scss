@@ -1,205 +1,205 @@
 .sliderMain {
-	@include page-base(80px, 188px);
+  @include page-base(80px, 188px);
 
-	@include laptop {
-		padding-bottom: 340px;
-	}
+  @include laptop {
+    padding-bottom: 340px;
+  }
 
-	@include phone {
-		padding-bottom: 640px;
-	}
+  @include phone {
+    padding-bottom: 640px;
+  }
 
-	.sliderMain__container {
-		@include page-container;
-		position: relative;
+  .sliderMain__container {
+    @include page-container;
+    position: relative;
 
-		.sliderMain__container__inner {
-			position: absolute;
-			top: 45%;
-			left: 0;
-			z-index: 1;
-			transform: translateY(-50%);
-			width: 100%;
+    .sliderMain__container__inner {
+      position: absolute;
+      top: 45%;
+      left: 0;
+      z-index: 1;
+      transform: translateY(-50%);
+      width: 100%;
 
-			@include tablet {
-				display: none;
-			}
+      @include tablet {
+        display: none;
+      }
 
-			.sliderMain__container__arrows {
-				display: flex;
-				justify-content: space-between;
-				align-items: center;
+      .sliderMain__container__arrows {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
 
-				svg {
-					width: 66px;
-					height: 16px;
-				}
+        svg {
+          width: 66px;
+          height: 16px;
+        }
 
-				.sliderMain__arrow__left {
-					transform: rotate(180deg);
-					cursor: pointer;
-					@include notebook {
-						margin-left: 20px;
-					}
-					@include laptop {
-						display: none;
-					}
-				}
-				.sliderMain__arrow__right {
-					cursor: pointer;
-					@include notebook {
-						margin-right: 20px;
-					}
+        .sliderMain__arrow__left {
+          transform: rotate(180deg);
+          cursor: pointer;
+          @include notebook {
+            margin-left: 20px;
+          }
+          @include laptop {
+            display: none;
+          }
+        }
+        .sliderMain__arrow__right {
+          cursor: pointer;
+          @include notebook {
+            margin-right: 20px;
+          }
 
-					@include laptop {
-						display: none;
-					}
-				}
-			}
-		}
+          @include laptop {
+            display: none;
+          }
+        }
+      }
+    }
 
-		.sliderMain__container__content {
-			margin-left: 100px;
+    .sliderMain__container__content {
+      margin-left: 100px;
 
-			@include tablet {
-				margin-left: 0;
-			}
-			.sliderMain__content__prev {
-				margin-left: 5px;
-			}
+      @include tablet {
+        margin-left: 0;
+      }
+      .sliderMain__content__prev {
+        margin-left: 5px;
+      }
 
-			.sliderMain__content__title {
-				font-size: 35px;
-				font-family: $h1-ff;
-			}
-		}
+      .sliderMain__content__title {
+        font-size: 35px;
+        font-family: $h1-ff;
+      }
+    }
 
-		.sliderMain__container__sections {
-			margin-top: 10px;
-			.slick-dots {
-				position: absolute;
-				bottom: -45px;
-				list-style: none;
-				display: block;
-				text-align: center;
-				padding: 0;
-				margin: 0;
-				width: 100%;
-				li {
-					position: relative;
-					display: inline-block;
-					height: 20px;
-					width: 20px;
-					margin: 0 5px;
-					padding: 0;
+    .sliderMain__container__sections {
+      margin-top: 10px;
+      .slick-dots {
+        position: absolute;
+        bottom: -45px;
+        list-style: none;
+        display: block;
+        text-align: center;
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        li {
+          position: relative;
+          display: inline-block;
+          height: 20px;
+          width: 20px;
+          margin: 0 5px;
+          padding: 0;
 
-					cursor: pointer;
-					button {
-						background: transparent;
-						display: block;
-						outline: none;
-						line-height: 0px;
-						font-size: 0px;
-						color: transparent;
-						padding: 5px;
-						width: 20px;
-						height: 20px;
-						cursor: pointer;
-						border: 2px solid #ac0339;
-						border-radius: 50%;
-						&:hover,
-						&:focus {
-							outline: none;
-							&:before {
-								opacity: 0;
-							}
-						}
-						&:before {
-							position: absolute;
-							top: 0;
-							left: 0;
-							display: block;
-							content: " ";
-							width: 20px;
-							background-color: #ac0339;
-							height: 20px;
-							font-size: 80px;
-							line-height: 20px;
-							text-align: center;
-							border-radius: 50%;
-							color: #c4c4c4;
-							opacity: 0;
-							-webkit-font-smoothing: antialiased;
-							-moz-osx-font-smoothing: grayscale;
-						}
-					}
-					&.slick-active button:before {
-						color: #c4c4c4;
-						opacity: 100%;
-					}
-				}
-			}
-			.sliderMain__container__section1 {
-				display: flex !important;
-				margin-left: 100px;
-				width: 100%;
-				@include tablet {
-					display: block !important;
+          cursor: pointer;
+          button {
+            background: transparent;
+            display: block;
+            outline: none;
+            line-height: 0px;
+            font-size: 0px;
+            color: transparent;
+            padding: 5px;
+            width: 20px;
+            height: 20px;
+            cursor: pointer;
+            border: 2px solid #ac0339;
+            border-radius: 50%;
+            &:hover,
+            &:focus {
+              outline: none;
+              &:before {
+                opacity: 0;
+              }
+            }
+            &:before {
+              position: absolute;
+              top: 0;
+              left: 0;
+              display: block;
+              content: " ";
+              width: 20px;
+              background-color: #ac0339;
+              height: 20px;
+              font-size: 80px;
+              line-height: 20px;
+              text-align: center;
+              border-radius: 50%;
+              color: #c4c4c4;
+              opacity: 0;
+              -webkit-font-smoothing: antialiased;
+              -moz-osx-font-smoothing: grayscale;
+            }
+          }
+          &.slick-active button:before {
+            color: #c4c4c4;
+            opacity: 100%;
+          }
+        }
+      }
+      .sliderMain__container__section1 {
+        display: flex !important;
+        margin-left: 100px;
+        width: 100%;
+        @include tablet {
+          display: block !important;
 
-					margin-left: 0;
-				}
+          margin-left: 0;
+        }
 
-				.sliderMain__section1__main {
-					width: 50%;
-					margin-top: 30px;
-					@include tablet {
-						width: 100%;
-					}
+        .sliderMain__section1__main {
+          width: 50%;
+          margin-top: 30px;
+          @include tablet {
+            width: 100%;
+          }
 
-					.sliderMain__section1__main__text {
-						margin-top: 30px;
-					}
-					.sliderMain__section1__main__author {
-						margin-top: 60px;
+          .sliderMain__section1__main__text {
+            margin-top: 30px;
+          }
+          .sliderMain__section1__main__author {
+            margin-top: 60px;
 
-						@include tablet {
-							display: none;
-						}
+            @include tablet {
+              display: none;
+            }
 
-						a {
-							text-decoration: none;
-							color: #ac0339;
-						}
-					}
-				}
-				.sliderMain__section1__img {
-					width: 50%;
-					margin: 0 0 0 30px;
-					display: flex;
+            a {
+              text-decoration: none;
+              color: #ac0339;
+            }
+          }
+        }
+        .sliderMain__section1__img {
+          width: 50%;
+          margin: 0 0 0 30px;
+          display: flex;
 
-					@include tablet {
-						width: 100% !important;
-						margin: 60px 0 0 0;
-					}
-					img {
-						@include tablet {
-							width: 130px;
-						}
-					}
-					.sliderMain__section1__img__author {
-						display: none;
-						margin: 35px 0 0 50px;
+          @include tablet {
+            width: 100% !important;
+            margin: 60px 0 0 0;
+          }
+          img {
+            @include tablet {
+              width: 130px;
+            }
+          }
+          .sliderMain__section1__img__author {
+            display: none;
+            margin: 35px 0 0 50px;
 
-						a {
-							text-decoration: none;
-							color: #ac0339;
-						}
-						@include tablet {
-							display: block;
-						}
-					}
-				}
-			}
-		}
-	}
+            a {
+              text-decoration: none;
+              color: #ac0339;
+            }
+            @include tablet {
+              display: block;
+            }
+          }
+        }
+      }
+    }
+  }
 }

@@ -4,4 +4,19 @@
             <path d="M65.7071 7.29289C66.0976 7.68342 66.0976 8.31658 65.7071 8.70711L59.3431 15.0711C58.9526 15.4616 58.3195 15.4616 57.9289 15.0711C57.5384 14.6805 57.5384 14.0474 57.9289 13.6569L63.5858 8L57.9289 2.34315C57.5384 1.95262 57.5384 1.31946 57.9289 0.928932C58.3195 0.538408 58.9526 0.538408 59.3431 0.928932L65.7071 7.29289ZM0 7L65 7V9L0 9L0 7Z" fill="#AC0339"/>
         </g>
     </symbol>
+    <symbol id="auto" width="255" height="157" viewBox="0 0 255 157" fill="none">
+        <g>
+            <mask id="mask0" mask-type="alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="255" height="157">
+                <rect width="255" height="157" rx="10" fill="#CFCFCF"/>
+            </mask>
+            <g mask="url(#mask0)">
+                <rect y="-103" width="256" height="341" fill="url(#pattern0)"/>
+            </g>
+            <defs>
+                <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+                    <use xlink:href="#image0" transform="translate(0 -0.000488759) scale(0.000325521)"/>
+                </pattern>
+            </defs>
+        </g>
+    </symbol>
 </svg>
