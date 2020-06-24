@@ -1,15 +1,22 @@
 .footerMain {
-  @include page-base(20px, 20px);
-  background: #302333;
-  .footerMain__container {
-    @include page-container;
-    .footerMain__content {
-      .footerMain__content__text {
-        @include block-text;
-        color: $white-color;
-        font-size: 12px;
-        line-height: 18px;
-      }
-    }
-  }
+	@include page-base(40px, 40px);
+	background: #302333;
+
+	@include phone {
+		padding-top: 60px;
+		padding-bottom: 60px;
+	}
+
+	.footerMain__container {
+		@include page-container;
+
+		.footerMain__content {
+			.footerMain__content__text {
+				@include block-text;
+				color: $white-color;
+				font-size: 12px;
+				line-height: 18px;
+			}
+		}
+	}
 }
