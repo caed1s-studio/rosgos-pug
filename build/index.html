@@ -6,13 +6,17 @@
   <meta content="" name="description">
   <meta content="" name="keywords">
   <meta content="width=device-width, initial-scale=1" name="viewport">
-  <meta content="ie=edge" http-equiv="x-ua-compatible"><link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+  <meta content="ie=edge" http-equiv="x-ua-compatible">
+  <script src="assets/js/libs/gtm.js"></script><link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.5/jquery.fancybox.min.css" />
 <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
   <link rel="stylesheet" href="assets/css/app.css"><!--[if lt IE 9]>
   <script src="http://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script><![endif]-->
 </head>
 <body>
+  <noscript>
+    <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-P322ZLP" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+  </noscript>
   <div class="wrapper">
     <div class="indexMain">
       <div class="indexMain__screen">
@@ -23,7 +27,7 @@
             </svg>
           </div>
           <div class="indexMain__screen__content">
-            <div class="indexMain__screen__content__title">Ваш страховой <br> онлайн бизнес</div>
+            <div class="indexMain__screen__content__title">Дополнительный <br>онлайн заработок</div>
             <div class="indexMain__screen__content__text">Агентология — это доступная каждому IT-платформа <br> для удалённой работы.</div>
             <div class="indexMain__screen__content__btn">
               <button>
@@ -323,9 +327,14 @@
         <div class="scopeMain__content__title">Расширьте свои возможности! </div>
         <div class="scopeMain__content__text">Агентология - передовая платформа для заработкав страховой сфере, не имеющая границ! </div>
         <div class="scopeMain__content__inputs">
-          <input class="scopeMain__content__input" type="text" placeholder="Ваш E-mail">
-          <button class="scopeMain__content__btn">Зарегистрироваться</button>
-        </div><a class="scopeMain__content__second__text" href="#">У меня есть промокод</a>
+          <form action="https://portal2.agentology.ru/api/agentology/" method="post">
+            <div class="form__field">
+              <input class="scopeMain__content__input" type="email" placeholder="Ваш E-mail" required><span class="form__error">E-mail введен не верно</span>
+            </div>
+            <button class="scopeMain__content__btn" type="submit">Зарегистрироваться</button>
+          </form>
+        </div><a class="scopeMain__content__second__text">У меня есть промокод</a>
+        <input class="scopeMain__input" type="text" placeholder="Ваш Промокод">
       </div>
     </div>
     <div class="footerMain" id="footerMain">

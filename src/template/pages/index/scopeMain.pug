@@ -5,7 +5,11 @@
 
 
         .scopeMain__content__inputs
-            input(type="text" placeholder="Ваш E-mail").scopeMain__content__input
-            button.scopeMain__content__btn Зарегистрироваться
+            form(action="https://portal2.agentology.ru/api/agentology/" method="post")
+                .form__field
+                    input(type="email" placeholder="Ваш E-mail" required).scopeMain__content__input
+                    span.form__error E-mail введен не верно
+                button(type="submit" ).scopeMain__content__btn Зарегистрироваться
 
-        a(href="#").scopeMain__content__second__text У меня есть промокод
+        a.scopeMain__content__second__text У меня есть промокод
+        input(type="text" placeholder="Ваш Промокод").scopeMain__input

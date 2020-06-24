@@ -17,57 +17,95 @@
       }
     }
     .scopeMain__content__inputs {
-      margin: 60px 0;
-      .scopeMain__content__input {
-        width: 408px;
+      margin: 50px 0;
 
-        border: 1px solid $grey-color;
-        border-radius: 145px;
-        padding: 26px 40px;
-        background: none;
-
-        font-family: $btn-ff;
-        font-size: 16px;
-        line-height: 24px;
-        color: $grey-color;
-
-        transition: all 0.2s linear;
-
-        box-shadow: 0px 7px 30px rgba(154, 0, 50, 0.25);
-
-        // &:hover {
-        // 	background: $btnBgHDark-color;
-        // 	color: $btnTextHDark-color;
-        // }
-
-        // &:focus {
-        // 	background: $btnBgHDark-color;
-        // 	color: $btnTextHDark-color;
-        // 	outline: none;
-        // }
-
-        &:focus {
-          outline: none;
-        }
-
-        @include phone {
-          width: 100%;
-          display: flex;
-          justify-content: center;
-        }
-      }
-      .scopeMain__content__btn {
-        @include btn-light;
-        min-width: 227.54px;
-        margin-left: 40px;
+      form {
+        display: flex;
+        align-items: flex-end;
 
         @include tablet {
-          margin-top: 20px;
-          margin-left: 0;
-          width: 408px;
+          display: block;
         }
-        @include phone {
-          width: 100%;
+        .form__field {
+          display: flex;
+          flex-wrap: wrap-reverse;
+          width: 408px;
+          @include phone {
+            width: 100%;
+          }
+          .form__error {
+            margin-left: 30px;
+            color: $grey-color;
+            opacity: 0;
+            font-size: 12px;
+
+            transition: opacity 0.2s linear;
+          }
+
+          .scopeMain__content__input {
+            width: 408px;
+            margin-top: 10px;
+
+            border: 1px solid $grey-color;
+            border-radius: 145px;
+            padding: 26px 40px;
+            background: none;
+
+            font-family: $btn-ff;
+            font-size: 16px;
+            line-height: 24px;
+            color: $grey-color;
+
+            transition: all 0.2s linear;
+
+            box-shadow: 0px 7px 30px rgba(154, 0, 50, 0.25);
+
+            // &:hover {
+            // 	background: $btnBgHDark-color;
+            // 	color: $btnTextHDark-color;
+            // }
+
+            // &:focus {
+            // 	background: $btnBgHDark-color;
+            // 	color: $btnTextHDark-color;
+            // 	outline: none;
+            // }
+
+            &:focus {
+              outline: none;
+            }
+
+            @include phone {
+              width: 100%;
+              display: flex;
+              justify-content: center;
+            }
+            &:invalid:not(:placeholder-shown) + .form__error {
+              opacity: 1;
+            }
+            &:invalid:not(:placeholder-shown) {
+              border-color: $red-color;
+            }
+
+            &:valid:not(:placeholder-shown) {
+              border-color: $grey-color;
+            }
+          }
+        }
+
+        .scopeMain__content__btn {
+          @include btn-light;
+          min-width: 227.54px;
+          margin-left: 40px;
+
+          @include tablet {
+            margin-top: 20px;
+            margin-left: 0;
+            width: 408px;
+          }
+          @include phone {
+            width: 100%;
+          }
         }
       }
     }
@@ -75,6 +113,51 @@
     .scopeMain__content__second__text {
       color: $white-color;
       border-bottom: 1px solid $white-color;
+      cursor: pointer;
+      &.active {
+        display: none;
+      }
+    }
+    .scopeMain__input {
+      display: none;
+      width: 224px;
+      border: 1px solid $grey-color;
+      border-radius: 145px;
+      padding: 26px 40px;
+      background: none;
+
+      font-family: $btn-ff;
+      font-size: 16px;
+      line-height: 24px;
+      color: $grey-color;
+
+      transition: all 0.2s linear;
+
+      box-shadow: 0px 7px 30px rgba(154, 0, 50, 0.25);
+
+      &.active {
+        display: block;
+      }
+
+      // &:hover {
+      // 	background: $btnBgHDark-color;
+      // 	color: $btnTextHDark-color;
+      // }
+
+      // &:focus {
+      // 	background: $btnBgHDark-color;
+      // 	color: $btnTextHDark-color;
+      // 	outline: none;
+      // }
+
+      &:focus {
+        outline: none;
+      }
+
+      @include phone {
+        width: 100%;
+        justify-content: center;
+      }
     }
   }
 }
